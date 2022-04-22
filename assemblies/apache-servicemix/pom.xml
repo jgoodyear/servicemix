@@ -134,7 +134,7 @@
             <scope>provided</scope>
         </dependency>
     </dependencies>
-            
+
     <repositories>
         <!-- SpringSource EBR is necessary to get some Spring OSGi bundles atm -->
         <repository>
@@ -149,7 +149,7 @@
             </snapshots>
         </repository>
     </repositories>
-                
+
     <build>
         <resources>
             <resource>
@@ -217,7 +217,27 @@
                         <feature>eventadmin</feature>
                     </startupFeatures>
                     <bootFeatures>
+                        <feature>wrap</feature>
+                        <feature>shell</feature>
+                        <feature>shell-compat</feature>
+                        <feature>feature</feature>
+                        <feature>jaas</feature>
+                        <feature>ssh</feature>
+                        <feature>management</feature>
+                        <feature>bundle</feature>
+                        <feature>config</feature>
+                        <feature>deployer</feature>
+                        <feature>diagnostic</feature>
+                        <feature>feature</feature>
+                        <feature>instance</feature>
+                        <feature>kar</feature>
+                        <feature>log</feature>
+                        <feature>package</feature>
+                        <feature>service</feature>
+                        <feature>system</feature>
+
                         <feature>standard</feature>
+                        <feature>wrapper</feature>
                         <feature>camel</feature>
                         <feature>camel-blueprint</feature>
                         <feature>camel-jms</feature>
@@ -227,7 +247,6 @@
                         <feature>activemq-broker-noweb</feature>
                         <feature>activemq-blueprint</feature>
                         <feature>cxf</feature>
-                        <feature>servicemix-messaging</feature>
                         <feature>war</feature>
                     </bootFeatures>
                     <installedBundles>
